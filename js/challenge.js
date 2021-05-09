@@ -49,7 +49,7 @@ const likes = document.querySelector('.likes');
                        likesLi.innerText = counter + " has been liked " + pressCounter + " times.";
                        likes.append(likesLi);
                        liCounter++;
-                       innerCounter = counter;;
+                       counter.innerText = counter;
                        pressCounter = 1;
                }
        });
