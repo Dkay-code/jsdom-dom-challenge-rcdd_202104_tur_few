@@ -28,12 +28,31 @@ plusButton.addEventListener("click", () => {
 
 
 const heartButton = document.querySelector('#heart');
-heartButton.addEventListener("click", () => {
+// heartButton.addEventListener("click", () => {
+// const likes = document.querySelector('.likes');
+// const likesMessage = document.createElement('li');
+// likesMessage.innerText= counter.innerText + " has been liked " + "x"+ " times";
+// likes.appendChild(likesMessage);
+// })
+
+let pressCounter = 1;
 const likes = document.querySelector('.likes');
-const likesMessage = document.createElement('li');
-likesMessage.innerText= counter.innerText + " has been liked " + "x"+ " times";
-likes.appendChild(likesMessage);
-})
+       heartButton.addEventListener("click", function(){
+               let likesLi = document.createElement('li');
+
+               if (counter < innerCounter+1){
+                       pressCounter++;
+                       console.log("print me" + counter);
+               }
+               else {
+                       console.log("iam the else if")
+                       likesLi.innerText = counter + " has been liked " + pressCounter + " times.";
+                       likes.append(likesLi);
+                       liCounter++;
+                       innerCounter = counter;;
+                       pressCounter = 1;
+               }
+       });
 
 const pauseButton = document.querySelector('#pause');
 pauseButton.addEventListener("click", function(){
