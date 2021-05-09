@@ -1,5 +1,5 @@
 
-let counter = document.querySelector('#counter');    
+let counter = document.querySelector('#counter');
 let seconds = 0;
 function incrementSeconds() {
     seconds += 1;
@@ -7,7 +7,7 @@ function incrementSeconds() {
 }
 const cancel = setInterval(incrementSeconds, 1000);
 
-document.addEventListener("DOMContentLoaded",()=>{ 
+document.addEventListener("DOMContentLoaded",()=>{
     incrementSeconds();
 });
 
@@ -96,7 +96,4 @@ restartButton.addEventListener("click", function(){
     while (commentsP.firstChild) {
     commentsP.removeChild(commentsP.firstChild);
     }
-}); 
-
-
- 
+});
