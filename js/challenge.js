@@ -35,7 +35,7 @@ const heartButton = document.querySelector('#heart');
 // likesMessage.innerText= counter.innerText + " has been liked " + "x"+ " times";
 // likes.appendChild(likesMessage);
 // })
-let counter = 0, innerCounter = counter;
+let innerCounter = counter;
 let pressCounter = 1;
 const likes = document.querySelector('.likes');
        heartButton.addEventListener("click", function(){
